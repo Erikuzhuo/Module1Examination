@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thi Thực Hành</title>
+</head>
+<body>
+<h1> Câu 1</h1>
+<!--    <script>-->
+<!--        let numberArrays=[];-->
+<!--        for (let i = 0; i < 20; i++) {-->
+<!--            let num=+prompt("Nhập Số Nguyên "+i+" :");-->
+<!--            numberArrays.push(num);-->
+<!--        }-->
+<!--        alert(numberArrays)-->
+<!--        let resultArrays1=[];-->
+<!--        let result1=0;-->
+<!--        for (let j = 0; j <numberArrays.length ; j++) {-->
+<!--            if(numberArrays[j]%3===0 && numberArrays[j]%5===0){-->
+<!--                resultArrays1.push(numberArrays[j])-->
+<!--                result1+=numberArrays[j];-->
+<!--            }-->
+<!--        }-->
+<!--        alert(result1)-->
+<!--    </script>-->
+
+<h1> Câu 2</h1>
+<!--<script>-->
+<!--    let score = +prompt("Điểm Học Sinh là:");-->
+
+<!--    function rateScore(num) {-->
+<!--        debugger-->
+<!--        if (num < 45) {-->
+<!--            alert('Rớt');-->
+<!--        } else {-->
+<!--            for (let i = 45; i < 100; i += 5) {-->
+<!--                if (num > (i + 2) && num < (i + 5)) {-->
+<!--                    score = i + 5;-->
+<!--                    break;-->
+<!--                }-->
+<!--            }-->
+<!--            if (score >= 50) {-->
+<!--                alert('Đạt ' + score + ' Điểm');-->
+<!--            } else {-->
+<!--                alert('Rớt');-->
+<!--            }-->
+<!--        }-->
+<!--    }-->
+
+<!--    if (score >= 0 && score <= 100) {-->
+<!--        rateScore(score);-->
+<!--    } else alert('Mời nhập lại');-->
+<!--</script>-->
+
+<h1>Câu 3</h1>
+<script>
+    let num=+prompt('Nhập số lượng phần tử mảng và ít hơn 50 phần tử:');
+    let check=+prompt('Nhập số Nguyên K muốn tìm:')
+    let numArray=[];
+    let result3Array=[];
+    if(num>0 || num<50){
+    for (let i = 0; i < num; i++) {
+        let temp=+prompt('Nhập Phần Tử Số '+i+":")
+        numArray.push(temp);
+        }
+    }else alert('Nhập Lại')
+
+    for (let i = 0; i < numArray.length; i++) {
+        for (let j = 0; j < numArray.length; j++) {
+            if(numArray[i]+numArray[j]===check){
+                result3Array.push(i,j)
+            }
+        }
+    }
+
+    alert(result3Array)
+</script>
+
+<h1>Câu 4</h1>
+<!--<script>-->
+<!--    class Customers {-->
+<!--        constructor(id, name, phone, add, email) {-->
+<!--            this.id = id;-->
+<!--            this.name = name;-->
+<!--            this.phone = phone;-->
+<!--            this.add = add;-->
+<!--            this.email = email;-->
+<!--        }-->
+
+<!--        getName() {-->
+<!--            return this.name;-->
+<!--        }-->
+
+<!--        setName(name) {-->
+<!--            this.name = name;-->
+<!--        }-->
+
+<!--        getID() {-->
+<!--            return this.id;-->
+<!--        }-->
+
+<!--        setID(id) {-->
+<!--            this.id = id-->
+<!--        }-->
+
+<!--        getPhone() {-->
+<!--            return this.phone;-->
+<!--        }-->
+
+<!--        setPhone(phone) {-->
+<!--            this.phone = phone-->
+<!--        }-->
+
+<!--        getAdd() {-->
+<!--            return this.add;-->
+<!--        }-->
+
+<!--        setAdd(add) {-->
+<!--            this.add = add-->
+<!--        }-->
+
+<!--        getEmail() {-->
+<!--            return this.email;-->
+<!--        }-->
+
+<!--        setEmail(email) {-->
+<!--            this.email = email-->
+<!--        }-->
+<!--    }-->
+
+<!--    let customer = new Customers(11, "David", "0954824151", "NY", "David@gmail.com");-->
+<!--    console.log(customer)-->
+<!--</script>-->
+</body>
+</html>
